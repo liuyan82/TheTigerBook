@@ -1,0 +1,98 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.9~svn20110310	//
+A_AssignStm	slp.c	/^A_stm A_AssignStm(string id, A_exp exp) {$/;"	f
+A_CompoundStm	slp.c	/^A_stm A_CompoundStm(A_stm stm1, A_stm stm2) {$/;"	f
+A_EseqExp	slp.c	/^A_exp A_EseqExp(A_stm stm, A_exp exp) {$/;"	f
+A_IdExp	slp.c	/^A_exp A_IdExp(string id) {$/;"	f
+A_LastExpList	slp.c	/^A_expList A_LastExpList(A_exp last) {$/;"	f
+A_NumExp	slp.c	/^A_exp A_NumExp(int num) {$/;"	f
+A_OpExp	slp.c	/^A_exp A_OpExp(A_exp left, A_binop oper, A_exp right) {$/;"	f
+A_PairExpList	slp.c	/^A_expList A_PairExpList(A_exp head, A_expList tail) {$/;"	f
+A_PrintStm	slp.c	/^A_stm A_PrintStm(A_expList exps) {$/;"	f
+A_assignStm	slp.h	/^struct A_stm_ {enum {A_compoundStm, A_assignStm, A_printStm} kind;$/;"	e	enum:A_stm_::__anon2
+A_binop	slp.h	/^typedef enum {A_plus,A_minus,A_times,A_div} A_binop;$/;"	t	typeref:enum:__anon1
+A_compoundStm	slp.h	/^struct A_stm_ {enum {A_compoundStm, A_assignStm, A_printStm} kind;$/;"	e	enum:A_stm_::__anon2
+A_div	slp.h	/^typedef enum {A_plus,A_minus,A_times,A_div} A_binop;$/;"	e	enum:__anon1
+A_eseqExp	slp.h	/^struct A_exp_ {enum {A_idExp, A_numExp, A_opExp, A_eseqExp} kind;$/;"	e	enum:A_exp_::__anon7
+A_exp	slp.h	/^typedef struct A_exp_ *A_exp;$/;"	t	typeref:struct:A_exp_
+A_expList	slp.h	/^typedef struct A_expList_ *A_expList;$/;"	t	typeref:struct:A_expList_
+A_expList_	slp.h	/^struct A_expList_ {enum {A_pairExpList, A_lastExpList} kind;$/;"	s
+A_exp_	slp.h	/^struct A_exp_ {enum {A_idExp, A_numExp, A_opExp, A_eseqExp} kind;$/;"	s
+A_idExp	slp.h	/^struct A_exp_ {enum {A_idExp, A_numExp, A_opExp, A_eseqExp} kind;$/;"	e	enum:A_exp_::__anon7
+A_lastExpList	slp.h	/^struct A_expList_ {enum {A_pairExpList, A_lastExpList} kind;$/;"	e	enum:A_expList_::__anon11
+A_minus	slp.h	/^typedef enum {A_plus,A_minus,A_times,A_div} A_binop;$/;"	e	enum:__anon1
+A_numExp	slp.h	/^struct A_exp_ {enum {A_idExp, A_numExp, A_opExp, A_eseqExp} kind;$/;"	e	enum:A_exp_::__anon7
+A_opExp	slp.h	/^struct A_exp_ {enum {A_idExp, A_numExp, A_opExp, A_eseqExp} kind;$/;"	e	enum:A_exp_::__anon7
+A_pairExpList	slp.h	/^struct A_expList_ {enum {A_pairExpList, A_lastExpList} kind;$/;"	e	enum:A_expList_::__anon11
+A_plus	slp.h	/^typedef enum {A_plus,A_minus,A_times,A_div} A_binop;$/;"	e	enum:__anon1
+A_printStm	slp.h	/^struct A_stm_ {enum {A_compoundStm, A_assignStm, A_printStm} kind;$/;"	e	enum:A_stm_::__anon2
+A_stm	slp.h	/^typedef struct A_stm_ *A_stm;$/;"	t	typeref:struct:A_stm_
+A_stm_	slp.h	/^struct A_stm_ {enum {A_compoundStm, A_assignStm, A_printStm} kind;$/;"	s
+A_times	slp.h	/^typedef enum {A_plus,A_minus,A_times,A_div} A_binop;$/;"	e	enum:__anon1
+FALSE	util.h	7;"	d
+String	util.c	/^string String(char *s)$/;"	f
+TRUE	util.h	6;"	d
+Table	table.c	/^Table_ Table(string id, int value, Table_ tail)$/;"	f
+Table_	table.h	/^typedef struct table * Table_;$/;"	t	typeref:struct:table
+U_BoolList	util.c	/^U_boolList U_BoolList(bool head, U_boolList tail)$/;"	f
+U_boolList	util.h	/^typedef struct U_boolList_ *U_boolList;$/;"	t	typeref:struct:U_boolList_
+U_boolList_	util.h	/^struct U_boolList_ {bool head; U_boolList tail;};$/;"	s
+assign	slp.h	/^                    struct {string id; A_exp exp;} assign;$/;"	m	union:A_stm_::__anon3	typeref:struct:A_stm_::__anon3::__anon5
+bool	util.h	/^typedef char bool;$/;"	t
+checked_malloc	util.c	/^void *checked_malloc(int len)$/;"	f
+compound	slp.h	/^             union {struct {A_stm stm1, stm2;} compound;$/;"	m	union:A_stm_::__anon3	typeref:struct:A_stm_::__anon3::__anon4
+eseq	slp.h	/^                    struct {A_stm stm; A_exp exp;} eseq;$/;"	m	union:A_exp_::__anon8	typeref:struct:A_exp_::__anon8::__anon10
+exp	slp.h	/^                    struct {A_stm stm; A_exp exp;} eseq;$/;"	m	struct:A_exp_::__anon8::__anon10
+exp	slp.h	/^                    struct {string id; A_exp exp;} assign;$/;"	m	struct:A_stm_::__anon3::__anon5
+exps	slp.h	/^                    struct {A_expList exps;} print;$/;"	m	struct:A_stm_::__anon3::__anon6
+head	slp.h	/^                   union {struct {A_exp head; A_expList tail;} pair;$/;"	m	struct:A_expList_::__anon12::__anon13
+head	util.h	/^struct U_boolList_ {bool head; U_boolList tail;};$/;"	m	struct:U_boolList_
+id	slp.h	/^                    struct {string id; A_exp exp;} assign;$/;"	m	struct:A_stm_::__anon3::__anon5
+id	slp.h	/^             union {string id;$/;"	m	union:A_exp_::__anon8
+id	table.h	/^    string id;$/;"	m	struct:table
+interp	interp.c	/^void interp(A_stm stm)$/;"	f
+interpAssignStm	interp.c	/^Table_ interpAssignStm(string id, A_exp exp, Table_ table)$/;"	f
+interpCompoundStm	interp.c	/^Table_ interpCompoundStm(A_stm stm1, A_stm stm2, Table_ table)$/;"	f
+interpEseqExp	interp.c	/^int interpEseqExp(A_stm stm, A_exp exp, Table_ table)$/;"	f
+interpExp	interp.c	/^int interpExp(A_exp exp, Table_ table)$/;"	f
+interpIDexp	interp.c	/^int interpIDexp(string id, Table_ table)$/;"	f
+interpNumberExp	interp.c	/^int interpNumberExp(int num)$/;"	f
+interpOPExp	interp.c	/^int interpOPExp(A_exp left, A_exp right, A_binop op, Table_ table)$/;"	f
+interpPrintStm	interp.c	/^Table_ interpPrintStm(A_expList exps, Table_ table)$/;"	f
+interpStm	interp.c	/^Table_ interpStm(A_stm stm Table_ table)$/;"	f
+kind	slp.h	/^struct A_expList_ {enum {A_pairExpList, A_lastExpList} kind;$/;"	m	struct:A_expList_	typeref:enum:A_expList_::__anon11
+kind	slp.h	/^struct A_exp_ {enum {A_idExp, A_numExp, A_opExp, A_eseqExp} kind;$/;"	m	struct:A_exp_	typeref:enum:A_exp_::__anon7
+kind	slp.h	/^struct A_stm_ {enum {A_compoundStm, A_assignStm, A_printStm} kind;$/;"	m	struct:A_stm_	typeref:enum:A_stm_::__anon2
+last	slp.h	/^                          A_exp last;$/;"	m	union:A_expList_::__anon12
+left	slp.h	/^                    struct {A_exp left; A_binop oper; A_exp right;} op;$/;"	m	struct:A_exp_::__anon8::__anon9
+lookup	table.c	/^int lookup(string id, Table_ head)$/;"	f
+main	main.c	/^int main(int argc, char ** argv)$/;"	f
+max	maxarg.c	/^static int max(int l, int r)$/;"	f	file:
+maxargs	maxarg.c	/^int maxargs(A_stm stm)$/;"	f
+maxargsInExp	maxarg.c	/^int maxargsInExp(A_exp exp, int maxArgsDiscovered)$/;"	f
+maxargsInStm	maxarg.c	/^int maxargsInStm(A_stm stm, int maxArgsDiscovered)$/;"	f
+num	slp.h	/^                    int num;$/;"	m	union:A_exp_::__anon8
+numExpInExpList	maxarg.c	/^int numExpInExpList(A_expList extList)$/;"	f
+op	slp.h	/^                    struct {A_exp left; A_binop oper; A_exp right;} op;$/;"	m	union:A_exp_::__anon8	typeref:struct:A_exp_::__anon8::__anon9
+oper	slp.h	/^                    struct {A_exp left; A_binop oper; A_exp right;} op;$/;"	m	struct:A_exp_::__anon8::__anon9
+pair	slp.h	/^                   union {struct {A_exp head; A_expList tail;} pair;$/;"	m	union:A_expList_::__anon12	typeref:struct:A_expList_::__anon12::__anon13
+print	slp.h	/^                    struct {A_expList exps;} print;$/;"	m	union:A_stm_::__anon3	typeref:struct:A_stm_::__anon3::__anon6
+prog	prog1.c	/^A_stm prog(void) {$/;"	f
+right	slp.h	/^                    struct {A_exp left; A_binop oper; A_exp right;} op;$/;"	m	struct:A_exp_::__anon8::__anon9
+stm	slp.h	/^                    struct {A_stm stm; A_exp exp;} eseq;$/;"	m	struct:A_exp_::__anon8::__anon10
+stm1	slp.h	/^             union {struct {A_stm stm1, stm2;} compound;$/;"	m	struct:A_stm_::__anon3::__anon4
+stm2	slp.h	/^             union {struct {A_stm stm1, stm2;} compound;$/;"	m	struct:A_stm_::__anon3::__anon4
+string	util.h	/^typedef char *string;$/;"	t
+table	table.h	/^struct table$/;"	s
+tail	slp.h	/^                   union {struct {A_exp head; A_expList tail;} pair;$/;"	m	struct:A_expList_::__anon12::__anon13
+tail	table.h	/^    Table_ tail;$/;"	m	struct:table
+tail	util.h	/^struct U_boolList_ {bool head; U_boolList tail;};$/;"	m	struct:U_boolList_
+u	slp.h	/^                         } u;$/;"	m	struct:A_expList_	typeref:union:A_expList_::__anon12
+u	slp.h	/^                   } u;$/;"	m	struct:A_exp_	typeref:union:A_exp_::__anon8
+u	slp.h	/^                   } u;$/;"	m	struct:A_stm_	typeref:union:A_stm_::__anon3
+update	table.c	/^Table_ update(string id, int value, Table_ head)$/;"	f
+value	table.h	/^    int value;$/;"	m	struct:table
