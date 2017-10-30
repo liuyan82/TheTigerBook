@@ -1,0 +1,23 @@
+begin comments : 1
+end comments : 40
+       LET   44
+      TYPE   50
+      TYPE   59
+        EQ   64
+     ARRAY   66
+        OF   72
+        IN   75
+       VAR   81
+       INT   88 1
+     COLON   89
+      TYPE   93
+    ASSIGN   98
+      TYPE  104
+    LBRACK  109
+       INT  110 10
+    RBRACK  112
+        OF  114
+       INT  117 0
+        IN  120
+       INT  128 1
+       END  131
